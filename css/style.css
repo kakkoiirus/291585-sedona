@@ -79,6 +79,7 @@ h2 {
 .main-navigation li:nth-child(1),
 .main-navigation li:nth-child(2) {
   float: left;
+
 }
 
 .main-navigation li:nth-child(3),
@@ -154,18 +155,75 @@ h2 {
   height: 593px;
 }
 
-/* Footer */
+/* Hotels */
+.accomodation-filter {
+  padding-top: 29px;
+  padding-bottom: 33px;
+  background: url("../img/filter-bg.jpg") no-repeat;
+  background-position: 0px -56px;
+}
 
-footer {
-  margin-top: -120px;
-  padding-top: 37px;
-  padding-bottom: 37px;
-  opacity: 0.9;
-  background-color: white;
+.accomodation-form fieldset {
+  float: left;
+  width: 240px;
+}
+
+.accomodation-form fieldset:last-child {
+  float: right;
+  width: 328px;
+}
+
+.result-top{
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.result-top-found {
+  float: left;
+  width: 160px;
+}
+
+.result-top-sort {
+  float: left;
+  width: 700px;
+}
+
+.result-sort-direction {
+  float: right;
+  width: 50px;
+}
+
+.result-top-sort ul,
+.result-sort-direction ul {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  list-style: none;
+}
+
+.result-top-sort li,
+.result-sort-direction li {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+/* Footer */
+.footer {
+  padding-top: 36px;
+  padding-bottom: 36px;
+  background-color: #ffffff;
 
   /*Временная высота*/
   min-height: 46px;
 }
+
+.main-footer {
+  margin-top: -118px;
+  opacity: 0.9;
+}
+
+
 
 .footer-hashtag {
   float: left;
