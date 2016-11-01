@@ -3,6 +3,7 @@ body {
   font-size: 14px;
   font-weight: normal;
   line-height: 21px;
+  text-transform: uppercase;
   color: #333333;
   background: #f2f2f2;
 }
@@ -47,6 +48,10 @@ h2 {
 
 .to-right {
   float: right;
+}
+
+.btn {
+  display: inline-block;
 }
 
 /* Header */
@@ -174,6 +179,8 @@ h2 {
 }
 
 .result-top{
+  padding-top: 32px;
+  padding-bottom: 32px;
   border-bottom: 1px solid #e5e5e5;
 }
 
@@ -190,6 +197,7 @@ h2 {
 .result-sort-direction {
   float: right;
   width: 50px;
+  text-align: right;
 }
 
 .result-top-sort ul,
@@ -208,6 +216,87 @@ h2 {
   line-height: 18px;
 }
 
+.result-top-sort li {
+  margin-right: 33px;
+}
+
+.sort-name {
+  margin-right: 40px;
+}
+
+.result-item {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.result-image {
+  float: left;
+  width: 135px;
+  height: 90px;
+  margin-right: 30px;
+}
+
+.result-content {
+  float: left;
+  width:563px;
+}
+
+.result-content h2 {
+  margin: 0 0 12px 0;
+  line-height: 26px;
+}
+
+.result-content a {
+  text-decoration: none;
+}
+
+.accomodation-info {
+  font-size: 0;
+  margin-bottom: 17px;
+}
+
+.accomodation-type {
+  display: inline-block;
+  width: 110px;
+  margin-right: 5px;
+  font-size: 14px;
+}
+
+.accomodation-price {
+  display: inline-block;
+  width: 142px;
+  font-size: 14px;
+}
+
+.btn-more {
+  width: 110px;
+}
+
+.btn-book {
+  width: 142px;
+}
+
+.result-rating {
+  float: right;
+  width: 240px;
+  text-align: right;
+  font-size: 0px;
+}
+
+.rating-pict{
+  margin-bottom: 47px;
+  font-size: 14px;
+}
+
+.rating-counter {
+  display: inline-block;
+  width: 110px;
+  font-size: 14px;
+  background: #f2f2f2;
+  text-align: center;
+}
+
 /* Footer */
 .footer {
   padding-top: 36px;
@@ -222,8 +311,6 @@ h2 {
   margin-top: -118px;
   opacity: 0.9;
 }
-
-
 
 .footer-hashtag {
   float: left;
