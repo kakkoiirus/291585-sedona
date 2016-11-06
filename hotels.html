@@ -3,11 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <div class="wrapper">
-      <header class="main-header container">
+      <header class="main-header">
           <div class="main-logo">
             <a href="index.html"><img src="img/logo.png" width="138" height="70" alt="City of Sedona"></a>
           </div>
@@ -25,40 +27,42 @@
           <form class="accomodation-form clearfix" action="#" method="post">
             <fieldset>
               <legend>Инфраструктура:</legend>
-              <label>
-                <input type="checkbox" name="pool" id="pool" checked>
+              <input type="checkbox" name="pool" id="pool" checked>
+              <label for="pool">
                 Бассейн
               </label>
-              <label>
-                <input type="checkbox" name="parking" id="parking">
+              <input type="checkbox" name="parking" id="parking">
+              <label for="parking">
                 Парковка
               </label>
-              <label>
-                <input type="checkbox" name="wifi" id="wifi">
+              <input type="checkbox" name="wifi" id="wifi">
+              <label for="wifi">
                 Wi-Fi
               </label>
             </fieldset>
             <fieldset>
               <legend>Тип жилья:</legend>
-              <label>
-                <input type="checkbox" name="hotel" id="hotel" checked>
+              <input type="checkbox" name="hotel" id="hotel" checked>
+              <label for="hotel">
                 Гостиница
               </label>
-              <label>
-                <input type="checkbox" name="motel" id="motel" checked>
+              <input type="checkbox" name="motel" id="motel" checked>
+              <label for="motel">
                 Мотель
               </label>
-              <label>
-                <input type="checkbox" name="apartments" id="apartments" checked>
+              <input type="checkbox" name="apartments" id="apartments" checked>
+              <label for="apartments">
                 Апартаменты
               </label>
             </fieldset>
-            <fieldset>
-              <legend>Стоимость в сутки (Р):</legend>
-              <input type="number" name="price-min" id="price-min" min="0" value="0">
-              <input type="number" name="price-max" id="price-max" min="0" value="3000">
+            <fieldset class="price-range">
+              <legend class="price-range-title">Стоимость в сутки (Р):</legend>
+              <div class="price-range-input">
+                <input type="text" name="price-min" id="price-min" min="0" value="от 0">
+                <input type="text" name="price-max" id="price-max" min="0" value="до 3000">
+              </div>
               <!-- Здесь нужен двойной ползунок -->
-              <button class="btn" type="submit">Показать</button>
+              <button class="btn btn-filter" type="submit">Показать</button>
             </fieldset>
           </form>
         </div>
@@ -69,15 +73,15 @@
           <div class="result-top-sort">
             <span class="sort-name">Сортировка:</span>
             <ul class="sort-type">
-              <li><a class="active" href="#">По цене</a></li>
+              <li><a class="active-link" href="#">По цене</a></li>
               <li><a href="#">По типу</a></li>
               <li><a href="#">По рейтингу</a></li>
             </ul>
           </div>
           <div class="result-sort-direction">
             <ul>
-              <li><a href="#"><</a></li>
-              <li><a class="active" href="#">></a></li>
+              <li><a class="ascending" href="#">по возрастанию</a></li>
+              <li><a class="descending active-link" href="#">по убыванию</a></li>
             </ul>
           </div>
         </div>
@@ -86,7 +90,7 @@
             <img src="img/hotel-photo-1.jpg" width="135" height="90" alt="Amara resort & spa">
           </div>
           <div class="result-content">
-            <h2><a href="#">Amara resort & spa</a></h2>
+            <h2><a class="accomodation-title" href="#">Amara resort & spa</a></h2>
             <div class="accomodation-info">
               <span class="accomodation-type">
                 Гостиница
@@ -96,8 +100,8 @@
               </span>
             </div>
             <div class="accomodation-btn">
-              <a class="btn btn-more" href="#">Подробнее</a>
-              <a class="btn btn-book" href="#">Забронировать</a>
+              <a class="btn btn-more btn-blue" href="#">Подробнее</a>
+              <a class="btn btn-book btn-brown" href="#">Забронировать</a>
             </div>
           </div>
           <div class="result-rating">
@@ -117,7 +121,7 @@
             <img src="img/hotel-photo-2.jpg" width="135" height="90" alt="Desert Quail Inn">
           </div>
           <div class="result-content">
-            <h2><a href="#">Desert Quail Inn</a></h2>
+            <h2><a class="accomodation-title" href="#">Desert Quail Inn</a></h2>
             <div class="accomodation-info">
               <span class="accomodation-type">
                 Мотель
@@ -127,8 +131,8 @@
               </span>
             </div>
             <div class="accomodation-btn">
-              <a class="btn btn-more" href="#">Подробнее</a>
-              <a class="btn btn-book" href="#">Забронировать</a>
+              <a class="btn btn-more btn-blue" href="#">Подробнее</a>
+              <a class="btn btn-book btn-brown" href="#">Забронировать</a>
             </div>
           </div>
           <div class="result-rating">
@@ -146,7 +150,7 @@
             <img src="img/hotel-photo-3.jpg" width="135" height="90" alt="Villas at Poco Diablo">
           </div>
           <div class="result-content">
-            <h2><a href="#">Villas at Poco Diablo</a></h2>
+            <h2><a class="accomodation-title" href="#">Villas at Poco Diablo</a></h2>
             <div class="accomodation-info">
               <span class="accomodation-type">
                 Апартаменты
@@ -156,8 +160,8 @@
               </span>
             </div>
             <div class="accomodation-btn">
-              <a class="btn btn-more" href="#">Подробнее</a>
-              <a class="btn btn-book" href="#">Забронировать</a>
+              <a class="btn btn-more btn-blue" href="#">Подробнее</a>
+              <a class="btn btn-book btn-brown" href="#">Забронировать</a>
             </div>
           </div>
           <div class="result-rating">
@@ -172,7 +176,7 @@
           </div>
         </div>
       </main>
-      <footer class="footer container">
+      <footer class="footer container clearfix">
           <div class="footer-hashtag">
             #visitsedona
           </div>
@@ -183,8 +187,8 @@
           </div>
           <div class="footer-copyright">
             website by
-            <a href="#">
-              <img src="img/html-academy.png" width="113" height="39" alt="html academy">
+            <a href="https://htmlacademy.ru/">
+              html academy
             </a>
           </div>
       </footer>
