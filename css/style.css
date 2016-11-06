@@ -686,6 +686,7 @@ input[type="checkbox"]:checked:disabled + label::before {
 .result-sort-direction {
   float: right;
   width: 50px;
+  font-size: 0;
   text-align: right;
 }
 
@@ -694,8 +695,7 @@ input[type="checkbox"]:checked:disabled + label::before {
   color: #000000;
 }
 
-.result-top-sort ul,
-.result-sort-direction ul {
+.result-top-sort ul {
   display: inline-block;
   margin: 0;
   padding: 0;
@@ -703,8 +703,7 @@ input[type="checkbox"]:checked:disabled + label::before {
   list-style: none;
 }
 
-.result-top-sort li,
-.result-sort-direction li {
+.result-top-sort li {
   display: inline-block;
 }
 
