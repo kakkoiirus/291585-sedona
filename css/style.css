@@ -28,10 +28,6 @@ h2 {
   box-shadow: 0px 5px 15px 0px rgba(0, 1, 1, 0.2);
 }
 
-.main-header.container {
-  position: relative;
-}
-
 .container {
   padding-left: 6%;
   padding-right: 6%;
@@ -136,6 +132,10 @@ h2 {
 }
 
 /* Header */
+
+.main-header {
+  position: relative;
+}
 
 .main-logo {
   position: absolute;
