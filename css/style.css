@@ -254,19 +254,36 @@ h2 {
   line-height: 26px;
 }
 
-.features-illustrated {
-  background: #81b3d2;
+.features-illustrated.text-left {
+  background: linear-gradient(to right, #81b3d2 400px, #ffffff 400px);
+}
+
+.features-illustrated.text-right {
+  background: linear-gradient(to left, #81b3d2 400px, #ffffff 400px);
 }
 
 .features-illustrated .features-one-third {
-  padding: 54px 0;
+  box-sizing: border-box;
+  padding: 54px 47px 50px 47px;
   color: #ffffff;
 }
 
 .features-illustrated h2 {
+  width: 151px;
+  margin: 0 auto;
+  margin-bottom: 24px;
   font-size: 21px;
   line-height: 21px;
   color: #ffffff;
+}
+
+.features-num {
+  display: block;
+  margin-bottom: 23px;
+}
+
+.features-illustrated p {
+  margin: 0;
 }
 
 .features-one-third {
@@ -280,7 +297,7 @@ h2 {
 }
 
 .features-extra {
-  padding-top: 145px;
+  padding-top: 162px;
   padding-bottom: 82px;
 }
 
@@ -296,13 +313,22 @@ h2 {
   position: relative;
 }
 
+.features-extra h2 {
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.features-extra p {
+  margin: 0;
+}
+
 /* Иконка "Дом" */
 
 .features-extra .left::before {
   content: "";
   position: absolute;
   left: 50%;
-  bottom: 51px;
+  top: -101px;
   margin-left: -37px;
   width: 75px;
   height: 72px;
@@ -316,7 +342,7 @@ h2 {
   content: "";
   position: absolute;
   left: 50%;
-  bottom: 51px;
+  top: -101px;
   margin-left: -37px;
   width: 74px;
   height: 70px;
@@ -330,8 +356,8 @@ h2 {
   content: "";
   position: absolute;
   left: 50%;
-  bottom: 51px;
-  margin-left: -37px;
+  top: -105px;
+  margin-left: -32px;
   width: 64px;
   height: 76px;
   background: url("../img/sprite.png") no-repeat;
@@ -339,29 +365,46 @@ h2 {
 }
 
 .features-text {
-  padding-top: 50px;
-  padding-bottom: 60px;
+  padding: 45px 0 47px 0;
   background: #eeeeee;
+}
+
+.features-text .features-one-third {
+  box-sizing: border-box;
+  padding: 0 65px;
+}
+
+.features-text h2 {
+  width: 120px;
+  margin: 0 auto;
+  margin-bottom: 24px;
 }
 
 .main-hotels {
   position: relative;
   width: 568px;
   margin: 0 auto;
-  padding-top: 57px;
+  padding-top: 55px;
   text-align: center;
 }
 
 .main-hotels b {
+  display: block;
+  margin-bottom: 32px;
   font-size: 30px;
   font-weight: 700;
   line-height: 24px;
-  margin: 0;
+}
+
+.main-hotels p {
+  width: 440px;
+  margin: 0 auto;
+  margin-bottom: 50px;
 }
 
 /* Форма поиска отелей на главной */
 
-.main-hotels .hotels-form {
+.hotels-form {
   position: absolute;
   padding: 55px;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -375,6 +418,7 @@ h2 {
 }
 
 .hotels-form label {
+  font-family: "PT Sans", "Arial", sans-serif;
   position: relative;
   display: block;
   float: left;
@@ -385,7 +429,7 @@ h2 {
 .hotels-form .form-adults,
 .hotels-form .form-children {
   width: 50%;
-  margin-bottom: 55px;
+  margin-bottom: 54px;
 }
 
 .hotels-form .form-children {
