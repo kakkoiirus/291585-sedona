@@ -110,7 +110,9 @@ h2 {
 }
 
 .btn-filter {
+  display: block;
   width: 133px;
+  margin: 0 auto;
   font-weight: 400;
   background-color: transparent;
   border: 2px solid #ffffff;
@@ -603,8 +605,7 @@ h2 {
 .accomodation-form .price-range {
   float: right;
   width: 328px;
-  font-size: 0;
-  text-align: center;
+  color: #ffffff;
 }
 
 .accomodation-form legend {
@@ -653,54 +654,95 @@ input[type="checkbox"]:checked:disabled + label::before {
   background-position: -179px -10px;
 }
 
-.price-range input[type="text"] {
-  box-sizing: border-box;
-  display: inline-block;
-  width: 157px;
-  padding: 6px;
-  font-size: 14px;
-  font-weight: 400;
-  font-family: "PT Sans", "Arial", sans-serif;
-  line-height: 21px;
-  text-transform: uppercase;
-  text-align: center;
-  color: #ffffff;
-  background-color: transparent;
-  border: 2px solid #ffffff;
-}
-
-.price-range input[name="price-min"]{
-  border-right: none;
-}
-
-.price-range input[name="price-max"]{
-  border-left: none;
-}
-
 .accomodation-form .price-range-title {
   display: block;
   margin-bottom: 10px;
   text-align: left;
 }
 
-.accomodation-form .price-range-input {
+.price-controls {
   position: relative;
-  display: block;
-  margin-bottom: 10px;
-  text-align: right;
+  height: 36px;
+  margin-bottom: 20px;
+  font-size: 0;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
 }
 
-/* Разделитель полей "От" и "До" */
-
-.accomodation-form .price-range-input::before {
+.price-controls::after {
   content: "";
   position: absolute;
   top: 50%;
-  right: 155px;
-  margin-top: -11px;
+  left: 50%;
   width: 2px;
   height: 22px;
-  background-color: #ffffff;
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  background: none;
+  border: none;
+}
+
+/* Ползунки */
+
+.range-controls {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+  width: 4px;
+  height: 4px;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
 }
 
 .result-top{
