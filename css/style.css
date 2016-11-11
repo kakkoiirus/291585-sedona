@@ -451,6 +451,7 @@ h2 {
 .hotels-form {
   position: absolute;
 
+  display: none;
   padding: 55px;
 
   font-weight: 700;
@@ -462,6 +463,30 @@ h2 {
   text-transform: uppercase;
 
   background: #ffffff;
+}
+
+.hotels-form-open {
+  display: block;
+
+  animation-name: form-show;
+  animation-duration: 0.5s;
+}
+
+.hotels-form-close {
+  display: none;
+
+  animation-name: form-show;
+  animation-duration: 0.5s;
+  animation-direction: reverse;
+}
+
+@keyframes form-show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .hotels-form label {
