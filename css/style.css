@@ -686,7 +686,6 @@ h2 {
 .main-map {
   width: 1200px;
   height: 593px;
-
   overflow: hidden;
 }
 
@@ -941,12 +940,13 @@ input[type="checkbox"]:checked:disabled + label::before {
 
 .result-top-sort li {
   display: inline-block;
+  margin-right: 33px;
 
   vertical-align: top;
 }
 
-.result-top-sort li {
-  margin-right: 33px;
+.result-top-sort li:last-child {
+  margin-right: 0;
 }
 
 .result-top-sort a {
@@ -1054,7 +1054,7 @@ input[type="checkbox"]:checked:disabled + label::before {
 
 .result-content {
   float: left;
-  width: 563px;
+  width: 760px;
 }
 
 .result-content h2 {
@@ -1109,7 +1109,7 @@ input[type="checkbox"]:checked:disabled + label::before {
 
 .result-rating {
   float: right;
-  width: 240px;
+  width: 120px;
 
   font-size: 0;
   text-align: right;
