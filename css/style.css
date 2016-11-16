@@ -597,7 +597,7 @@ h2 {
   top: 50%;
   right: 9px;
 
-  width: 21px;
+  width: 22px;
   height: 22px;
   margin-top: -11px;
 
@@ -621,31 +621,30 @@ h2 {
 .form-children .minus {
   content: "";
   position: absolute;
-  top: 50%;
-  right: 94px;
+  top: 0;
+  right: 79px;
 
-  width: 12px;
-  height: 3px;
-  margin-top: -1px;
+  width: 38px;
+  height: 38px;
 
   font-size: 0;
 
-  background: url("../img/sprite.png") no-repeat;
-  background-position: -10px -102px;
+  background: transparent url("../img/sprite.png") no-repeat;
+  background-position: 3px -84px;
 }
 
 .form-children .minus {
-  right: 89px;
+  right: 76px;
 }
 
 .form-adults .minus:hover,
 .form-children .minus:hover {
-  background-position: -188px -102px;
+  background-position: -175px -84px;
 }
 
 .form-adults .minus:active,
 .form-children .minus:active {
-  background-position: -42px -102px;
+  background-position: -29px -84px;
 }
 
 /* Плюс */
@@ -654,31 +653,30 @@ h2 {
 .form-children .plus {
   content: "";
   position: absolute;
-  top: 50%;
-  right: 18px;
+  top: 0;
+  right: 3px;
 
-  width: 11px;
-  height: 11px;
-  margin-top: -5px;
+  width: 38px;
+  height: 38px;
 
   font-size: 0;
 
-  background: url("../img/sprite.png") no-repeat;
-  background-position: -220px -102px;
+  background: transparent url("../img/sprite.png") no-repeat;
+  background-position: -206px -89px;
 }
 
 .form-children .plus {
-  right: 14px;
+  right: 0;
 }
 
 .form-adults .plus:hover,
 .form-children .plus:hover {
-  background-position: -282px -102px;
+  background-position: -268px -89px;
 }
 
 .form-adults .plus:active,
 .form-children .plus:active {
-  background-position: -251px -102px;
+  background-position: -237px -89px;
 }
 
 /* Карта */
